@@ -45,6 +45,7 @@
     <Compile Include="AVeryBigSum.cs" />
     <Compile Include="DiagonalDifference.cs" />
     <Compile Include="IElement.cs" />
+    <Compile Include="MiniMaxSum.cs" />
     <Compile Include="PlusMinus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

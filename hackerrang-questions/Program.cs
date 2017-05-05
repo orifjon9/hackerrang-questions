@@ -35,7 +35,7 @@ namespace hackerrang_questions
 
         static void Main(String[] args)
         {
-            IElement element = new PlusMinus();
+            IElement element = new MiniMaxSum();
             element.execute();
             
             /*
