@@ -42,14 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppleandOrange.cs" />
     <Compile Include="AVeryBigSum.cs" />
+    <Compile Include="BirthdayCakeCandles.cs" />
+    <Compile Include="BreakingTheRecords.cs" />
     <Compile Include="DiagonalDifference.cs" />
+    <Compile Include="GradingStudent.cs" />
     <Compile Include="IElement.cs" />
+    <Compile Include="Kangaroo.cs" />
     <Compile Include="MiniMaxSum.cs" />
     <Compile Include="PlusMinus.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Staircase.cs" />
+    <Compile Include="TimeConvertion.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
