@@ -1,4 +1,6 @@
-﻿using System;
+﻿using hackerrang_questions.Sorting;
+using hackerrang_questions.Strings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,9 +37,9 @@ namespace hackerrang_questions
 
         static void Main(String[] args)
         {
-            IElement element = new SockMerchant();
+            IElement element = new TwoCharacters();
             element.execute();
-            
+            Console.ReadLine();
             /*
             int[] a = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).Where(w => w >= 1 && w <= 100).ToArray();
             int[] b = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).Where(w => w >= 1 && w <= 100).ToArray();
