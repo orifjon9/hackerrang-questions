@@ -1,4 +1,8 @@
-﻿using hackerrang_questions.Sorting;
+﻿using hackerrang_questions.Algorithms.Implementation;
+using hackerrang_questions.Algorithms.Sorting;
+using hackerrang_questions.DataStructures.Arrays;
+using hackerrang_questions.Implementation;
+using hackerrang_questions.Sorting;
 using hackerrang_questions.Strings;
 using System;
 using System.Collections.Generic;
@@ -34,12 +38,12 @@ namespace hackerrang_questions
              }
          }*/
        
-
         static void Main(String[] args)
         {
-            IElement element = new TwoCharacters();
+            IElement element = new CamelCase();
             element.execute();
             Console.ReadLine();
+
             /*
             int[] a = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).Where(w => w >= 1 && w <= 100).ToArray();
             int[] b = Console.ReadLine().Split(' ').Select(s => Convert.ToInt32(s)).Where(w => w >= 1 && w <= 100).ToArray();
@@ -57,7 +61,6 @@ namespace hackerrang_questions
             }
             Console.WriteLine(String.Join(" ", result));
             */
-            
         }
     }
 }
