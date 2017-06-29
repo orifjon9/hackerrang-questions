@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\Dynamic-Programming\FibonacciModified.cs" />
     <Compile Include="Algorithms\Implementation\AppleandOrange.cs" />
     <Compile Include="Algorithms\Implementation\CatsAndMouse.cs" />
     <Compile Include="Algorithms\Implementation\CountingValley.cs" />
@@ -62,6 +64,10 @@
     <Compile Include="Algorithms\Sorting\QuickSortInPlaceRunningTime.cs" />
     <Compile Include="Algorithms\Sorting\QuickSortInPlace.cs" />
     <Compile Include="Algorithms\Sorting\SuperReducedString.cs" />
+    <Compile Include="Algorithms\Strings\CaesarCipher.cs" />
+    <Compile Include="Algorithms\Strings\HackerRank.cs" />
+    <Compile Include="Algorithms\Strings\MarsExploration.cs" />
+    <Compile Include="Algorithms\Strings\Pangrams.cs" />
     <Compile Include="Algorithms\Strings\TwoCharacters.cs" />
     <Compile Include="Algorithms\Warmup\AVeryBigSum.cs" />
     <Compile Include="Algorithms\Implementation\BetweenToSets.cs" />

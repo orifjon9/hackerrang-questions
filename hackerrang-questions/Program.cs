@@ -1,5 +1,7 @@
-﻿using hackerrang_questions.Algorithms.Implementation;
+﻿using hackerrang_questions.Algorithms.Dynamic_Programming;
+using hackerrang_questions.Algorithms.Implementation;
 using hackerrang_questions.Algorithms.Sorting;
+using hackerrang_questions.Algorithms.Strings;
 using hackerrang_questions.DataStructures.Arrays;
 using hackerrang_questions.Implementation;
 using hackerrang_questions.Sorting;
@@ -37,10 +39,14 @@ namespace hackerrang_questions
                  Console.WriteLine("~ no response on stdout ~");
              }
          }*/
-       
+
         static void Main(String[] args)
         {
-            IElement element = new CamelCase();
+
+            Console.WriteLine(isMutation2("hello", "hey"));
+            Console.WriteLine(isMutation2("hello", "oleh"));
+
+            IElement element = new Pangrams();
             element.execute();
             Console.ReadLine();
 
@@ -61,6 +67,53 @@ namespace hackerrang_questions
             }
             Console.WriteLine(String.Join(" ", result));
             */
+        }
+
+        public static bool isMutation(string str1, string str2)
+        {
+
+            char[] strChars1 = str1.ToLower().ToCharArray()
+                .GroupBy(ch => ch)
+                .Select(s => s.Key)
+                .OrderBy(o => o)
+                .ToArray();
+            char[] strChars2 = str2.ToLower().ToCharArray()
+                .GroupBy(ch => ch)
+                .Select(s => s.Key)
+                .OrderBy(o => o)
+                .ToArray();
+
+            if (strChars1.Length == strChars2.Length)
+            {
+                for (int i = 0; i < strChars1.Length; i++)
+                {
+                    if (strChars1[i] != strChars2[i])
+                        return false;
+                }
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool isMutation2(string source, string target)
+        {
+            int[] index = new int[255];
+            for (int i = 0; i < target.Length; i++)
+            {
+                char ch = target[i];
+                index[(int)ch] += 1;
+            }
+
+            for (int i = 0; i < source.Length; i++)
+            {
+                char ch = source[i];
+                if (index[(int)ch] == 0)
+                    return false;
+            }
+
+            return true;
         }
     }
 }
