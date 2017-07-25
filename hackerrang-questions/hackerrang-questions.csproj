@@ -67,6 +67,7 @@
     <Compile Include="Algorithms\Strings\CaesarCipher.cs" />
     <Compile Include="Algorithms\Strings\HackerRank.cs" />
     <Compile Include="Algorithms\Strings\MarsExploration.cs" />
+    <Compile Include="Algorithms\Strings\PalindromeIndex.cs" />
     <Compile Include="Algorithms\Strings\Pangrams.cs" />
     <Compile Include="Algorithms\Strings\TwoCharacters.cs" />
     <Compile Include="Algorithms\Warmup\AVeryBigSum.cs" />

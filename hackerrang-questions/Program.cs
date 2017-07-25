@@ -43,10 +43,10 @@ namespace hackerrang_questions
         static void Main(String[] args)
         {
 
-            Console.WriteLine(isMutation2("hello", "hey"));
-            Console.WriteLine(isMutation2("hello", "oleh"));
+            //Console.WriteLine(isMutation2("hello", "hey"));
+            //Console.WriteLine(isMutation2("hello", "oleh"));
 
-            IElement element = new Pangrams();
+            IElement element = new PalindromeIndex();
             element.execute();
             Console.ReadLine();
 
