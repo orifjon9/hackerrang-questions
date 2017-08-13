@@ -42,6 +42,9 @@ namespace hackerrang_questions
 
         static void Main(String[] args)
         {
+            Console.WriteLine(maxDifferece(new int[] { 2, 3, 10, 2, 4, 8, 1 }));
+            Console.WriteLine(maxDifferece(new int[] { 7,9,5,6,3,2 }));
+
 
             //Console.WriteLine(isMutation2("hello", "hey"));
             //Console.WriteLine(isMutation2("hello", "oleh"));
@@ -67,6 +70,35 @@ namespace hackerrang_questions
             }
             Console.WriteLine(String.Join(" ", result));
             */
+        }
+
+        public static int maxDifferece(int[] arr)
+        {
+            int min, diff = -1;
+            if (arr.Length == 0)
+                return diff;
+
+            min = arr[0];
+            for (int i = 1; i < arr.Length; i++) //O(N)
+            {
+                diff = Math.Max(diff, arr[i] - min);
+                min = Math.Min(min, arr[i]);
+            }
+            return diff;
+
+            /*int maxValue = -1;
+            for (int i = 0; i < arr.Length; i++) //O(N^2)
+            {
+                for (int j = i+1; j < arr.Length; j++)
+                {
+                    if (i < j && arr[j] - arr[i] > maxValue)
+                    {
+                        maxValue = arr[j] - arr[i];
+                    }
+                }
+            }
+
+            return maxValue;*/
         }
 
         public static bool isMutation(string str1, string str2)
